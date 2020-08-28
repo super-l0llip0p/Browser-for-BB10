@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Scheme -->
+    <string name="app_scheme_http">
+        http
+    </string>
+    <string name="app_scheme_https">
+        https
+    </string>
+
+    <!-- Info -->
+    <string name="app_name">
+        莓友浏览器
+    </string>
+
+</resources>

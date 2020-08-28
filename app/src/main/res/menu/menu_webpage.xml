@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/back_to_top"
+        android:icon="@drawable/ic_to_top"
+        android:title="回到顶部" />
+
+    <item
+        android:id="@+id/add_to_speed_dial"
+        android:icon="@drawable/ic_show_dialpad"
+        android:title="添加至快速拨号" />
+
+    <item
+        android:id="@+id/find_in_page"
+        android:icon="@drawable/ic_search"
+        android:title="在此页面中查找 ..." />
+
+    <item
+        android:id="@+id/screenshot"
+        android:icon="@drawable/ic_camera"
+        android:title="截图" />
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share"
+        android:title="分享" />
+</menu>

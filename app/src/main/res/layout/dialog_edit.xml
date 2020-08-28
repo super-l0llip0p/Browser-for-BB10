@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <EditText
+        android:id="@+id/dialog_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/layout_margin_6dp"
+        android:background="@color/colorSearchBar"
+        android:gravity="center_vertical|start"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:paddingStart="@dimen/padding_10dp"
+        android:paddingEnd="@dimen/padding_10dp"
+        android:textColor="@color/text"
+        android:textColorHint="@color/hint"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/text_default_size" />
+
+</FrameLayout>

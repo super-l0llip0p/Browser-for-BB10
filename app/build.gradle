@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
+
+    defaultConfig {
+        applicationId "cc.markc.purerifle"
+        minSdkVersion 18
+        targetSdkVersion 30
+
+        ndk {
+            abiFilters "armeabi", "x86"
+        }
+        versionCode 10
+        versionName '2.0.0.200828'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation files('libs/tbs_sdk_thirdapp_v3.5.0.1063_43500_staticwithdownload_withoutGame_obfs_20171011_195714.jar')
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'com.yanzhenjie:permission:2.0.3'
+}

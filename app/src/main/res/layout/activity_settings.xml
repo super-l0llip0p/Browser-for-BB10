@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_44dp"
+        android:background="@color/background_dark"
+        android:gravity="center_vertical|start"
+        android:paddingStart="@dimen/padding_10dp"
+        android:paddingEnd="@dimen/padding_10dp"
+        android:text="@string/setting_label"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_big_size"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_2dp"
+        android:background="@color/colorTopBarLine" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SettingsCategoryTitle"
+                android:text="浏览" />
+
+            <TextView
+                style="@style/SettingsItemTitle"
+                android:text="搜索引擎" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/search_engine_spinner"
+                style="@style/SpinnerTheme"
+                android:entries="@array/setting_entries_search_engine" />
+
+            <View style="@style/SettingsItemDivider" />
+
+            <TextView
+                style="@style/SettingsItemTitle"
+                android:text="通知栏优先级" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/notification_priority_spinner"
+                style="@style/SpinnerTheme"
+                android:entries="@array/setting_entries_notification_priority" />
+
+            <View style="@style/SettingsItemDivider" />
+
+            <TextView
+                style="@style/SettingsItemTitle"
+                android:text="地址栏位置" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/tab_position_spinner"
+                style="@style/SpinnerTheme"
+                android:entries="@array/setting_entries_tab_position" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/omnibox_control_switch"
+                style="@style/SettingsSwitch"
+                android:text="左右拖动地址栏切换标签页" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/settings_divider" />
+
+            <TextView
+                style="@style/SettingsItemTitle"
+                android:text="音量键控制" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/volume_control_spinner"
+                style="@style/SpinnerTheme"
+                android:entries="@array/setting_entries_volume_control" />
+
+            <View style="@style/SettingsItemDivider" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/load_image_switch"
+                style="@style/SettingsSwitch"
+                android:text="加载图像" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/accept_cookie_switch"
+                style="@style/SettingsSwitch"
+                android:text="接受 Cookie" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/run_javascript_switch"
+                style="@style/SettingsSwitch"
+                android:text="运行 JavaScript" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/get_location_switch"
+                style="@style/SettingsSwitch"
+                android:text="获取地理位置" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/auto_open_new_tab_switch"
+                style="@style/SettingsSwitch"
+                android:text="自动打开新标签页" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/show_scroll_bar_switch"
+                style="@style/SettingsSwitch"
+                android:text="显示滚动条" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/text_reflow_switch"
+                style="@style/SettingsSwitch"
+                android:text="文本重排" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/settings_divider" />
+
+            <TextView
+                style="@style/SettingsItemTitle"
+                android:text="浏览器标识" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/browser_user_agent_spinner"
+                style="@style/SpinnerTheme"
+                android:entries="@array/setting_entries_user_agent" />
+
+            <View style="@style/SettingsItemDivider" />
+
+            <TextView
+                style="@style/SettingsItemTitle"
+                android:text="渲染模式" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/rendering_spinner"
+                style="@style/SpinnerTheme"
+                android:entries="@array/setting_entries_rendering" />
+
+            <View style="@style/SettingsItemDivider" />
+
+            <TextView
+                style="@style/SettingsCategoryTitle"
+                android:text="广告拦截" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/adblock_switch"
+                style="@style/SettingsSwitch"
+                android:text="Adblock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/settings_divider" />
+
+            <TextView
+                style="@style/SettingsCategoryTitle"
+                android:text="数据" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/save_password_switch"
+                style="@style/SettingsSwitch"
+                android:text="保存密码" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/clear_data_on_exit_switch"
+                style="@style/SettingsSwitch"
+                android:text="退出时清除数据" />
+
+            <Button
+                android:id="@+id/backup_bookmark_button"
+                style="@style/SettingsButton"
+                android:enabled="false"
+                android:text="备份书签" />
+
+            <Button
+                android:id="@+id/restore_bookmark_button"
+                style="@style/SettingsButton"
+                android:layout_marginTop="@dimen/layout_margin_10dp"
+                android:enabled="false"
+                android:text="恢复书签" />
+
+            <Button
+                android:id="@+id/clear_data_button"
+                style="@style/SettingsButton"
+                android:layout_marginTop="@dimen/layout_margin_10dp"
+                android:text="清除数据" />
+
+            <View style="@style/SettingsItemDivider" />
+
+            <TextView
+                style="@style/SettingsCategoryTitle"
+                android:text="关于" />
+
+            <Button
+                android:id="@+id/related_agreements_button"
+                style="@style/SettingsButton"
+                android:layout_marginTop="@dimen/layout_margin_10dp"
+                android:text="相关协议" />
+
+            <Button
+                android:id="@+id/check_update_button"
+                style="@style/SettingsButton"
+                android:layout_marginTop="@dimen/layout_margin_10dp"
+                android:layout_marginBottom="@dimen/layout_margin_10dp"
+                android:text="检查更新 (v2.0.0.0)"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
